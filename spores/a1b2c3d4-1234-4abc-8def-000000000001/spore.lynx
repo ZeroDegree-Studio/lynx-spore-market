@@ -1,0 +1,29 @@
+{
+  "spore_id": "a1b2c3d4-1234-4abc-8def-000000000001",
+  "format_version": "1",
+  "name": "Lynx-SmokeTest",
+  "author": "lynx",
+  "version": "1.0.0",
+  "category": "skill",
+  "description": "Lynx spore market smoke test - verifies GitHub fetch + download + import flow. Has no real semantic value; will be removed once the team ships production spores.",
+  "tags": [
+    "test",
+    "smoke-test"
+  ],
+  "license": "MIT",
+  "experiences": [
+    {
+      "type": "skill",
+      "domain": "coding",
+      "summary": "Test experience entry - exists only to validate spore schema round-trip",
+      "trigger": "After importing this spore",
+      "action": "Check that PreferenceStore contains an entry with source=imported and lineage=[spore_id]",
+      "weight": 0.5,
+      "tags": [
+        "test"
+      ],
+      "source": "self-derived"
+    }
+  ],
+  "prompts_delta": "This is a smoke-test spore. It exists to verify that the lynx-spore-market GitHub repository fetch, download, and Intel-mode import pipeline works end-to-end. The content here carries no real semantic value."
+}
