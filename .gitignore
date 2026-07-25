@@ -1,0 +1,56 @@
+# ===================================================================
+# lynx-spore-market .gitignore
+# ===================================================================
+# IMPORTANT: Do NOT ignore .lynx files!
+# .lynx files are the PRIMARY CONTENT of this repository.
+# Each spore lives at spores/<spore_id>/spore.lynx
+# ===================================================================
+
+# ----------------------------------------------------------------------
+# IDE / Editor
+# ----------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ----------------------------------------------------------------------
+# OS
+# ----------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ----------------------------------------------------------------------
+# Python (for tooling scripts under tools/)
+# ----------------------------------------------------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+.python-version
+
+# ----------------------------------------------------------------------
+# Temporary / Backup
+# ----------------------------------------------------------------------
+*.tmp
+*.bak
+*.log
+tools/_tmp/
+
+# ----------------------------------------------------------------------
+# Draft spores (not ready for submission)
+# Users can put work-in-progress spores here without accidentally pushing them.
+# ----------------------------------------------------------------------
+spores/_drafts/
+
+# ----------------------------------------------------------------------
+# Local market cache (if someone clones this repo for local development
+# with the Lynx client's LocalMarketAdapter, the cache should not be tracked)
+# ----------------------------------------------------------------------
+.cache/
+.local_cache/
