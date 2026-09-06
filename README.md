@@ -25,7 +25,7 @@ lynx-spore-market/
 ├── CONTRIBUTING.md                # How to contribute a spore
 ├── LICENSE                        # Repository license (MIT)
 ├── .gitignore
-├── index.json                     # (Planned) Auto-generated spore index
+├── index.json                     # Auto-generated spore index (updated by GitHub Actions)
 └── spores/
     └── <spore_id>/
         ├── spore.lynx             # The spore file (JSON payload)
@@ -97,13 +97,13 @@ The repository MIT license **does not** override individual spore licenses. User
 
 ### Client Integration
 
-The Lynx client (`github.com/ZeroDegree-Studio/lynx` main repo) reads this marketplace via the `GitHubMarketAdapter` (planned). First version uses `LocalMarketAdapter` for development/testing.
+The Lynx client reads this marketplace via the **GitHubMarketAdapter**: it fetches `index.json` from this repository (via `raw.githubusercontent.com`, with a configurable mirror URL for CDN access) and downloads spores on demand. The client can switch between the **local market** (default, offline-friendly) and this **GitHub market** at any time.
 
 ### Links
 
-- **Lynx main repository**: `github.com/ZeroDegree-Studio/lynx`
-- **Spore format spec**: `docs/SPORE_FORMAT.md` in the main repo
-- **User guide**: `docs/SPORE_USER_GUIDE.md` in the main repo
+- **Lynx main repository**: [github.com/ZeroDegree-Studio/LYNX](https://github.com/ZeroDegree-Studio/LYNX)
+- **Spore format spec**: [`docs/SPORE_FORMAT.md` in the main repo](https://github.com/ZeroDegree-Studio/LYNX/blob/main/docs/SPORE_FORMAT.md)
+- **User guide**: [`docs/SPORE_USER_GUIDE.md` in the main repo](https://github.com/ZeroDegree-Studio/LYNX/blob/main/docs/SPORE_USER_GUIDE.md)
 - **ZeroDegree Studio**: [zerodegree.cc](https://zerodegree.cc)
 
 ---
@@ -127,7 +127,7 @@ lynx-spore-market/
 ├── CONTRIBUTING.md                # 如何贡献孢子
 ├── LICENSE                        # 仓库许可证（MIT）
 ├── .gitignore
-├── index.json                     # （规划中）自动生成的孢子索引
+├── index.json                     # 自动生成的孢子索引（GitHub Actions 自动更新）
 └── spores/
     └── <spore_id>/
         ├── spore.lynx             # 孢子文件（JSON 内容）
@@ -199,11 +199,11 @@ Lynx 客户端首版自带 5 个原生孢子，首次启动时自动种入本地
 
 ### 客户端对接
 
-Lynx 客户端（`github.com/ZeroDegree-Studio/lynx` 主仓库）通过 `GitHubMarketAdapter`（规划中）读取本市场。首版用 `LocalMarketAdapter` 做开发/测试。
+Lynx 客户端通过 **GitHubMarketAdapter** 读取本市场：直接拉取本仓库的 `index.json`（走 `raw.githubusercontent.com`，支持配置镜像地址走国内 CDN），按需下载孢子文件。客户端可在**本地市场**（默认，离线可用）与 **GitHub 市场**之间随时切换。
 
 ### 链接
 
-- **Lynx 主仓库**：`github.com/ZeroDegree-Studio/lynx`
-- **孢子格式规范**：主仓库 `docs/SPORE_FORMAT.md`
-- **用户指南**：主仓库 `docs/SPORE_USER_GUIDE.md`
+- **Lynx 主仓库**：[github.com/ZeroDegree-Studio/LYNX](https://github.com/ZeroDegree-Studio/LYNX)
+- **孢子格式规范**：主仓库 [`docs/SPORE_FORMAT.md`](https://github.com/ZeroDegree-Studio/LYNX/blob/main/docs/SPORE_FORMAT.md)
+- **用户指南**：主仓库 [`docs/SPORE_USER_GUIDE.md`](https://github.com/ZeroDegree-Studio/LYNX/blob/main/docs/SPORE_USER_GUIDE.md)
 - **零度工作室**：[zerodegree.cc](https://zerodegree.cc)

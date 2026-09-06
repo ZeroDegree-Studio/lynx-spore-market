@@ -1,24 +1,5 @@
 {
   "version": "1",
-  "updated_at": "2026-07-25T15:52:32.341088+00:00",
-  "spores": [
-    {
-      "spore_id": "a1b2c3d4-1234-4abc-8def-000000000001",
-      "name": "Lynx-SmokeTest",
-      "author": "lynx",
-      "version": "1.0.0",
-      "category": "skill",
-      "description": "Lynx spore market smoke test - verifies GitHub fetch + download + import flow. Has no real semantic value; will be removed once the team ships production spores.",
-      "tags": [
-        "test",
-        "smoke-test"
-      ],
-      "price": 0,
-      "currency": "USD",
-      "official": true,
-      "license": "MIT",
-      "preview_url": "",
-      "download_url": "spores/a1b2c3d4-1234-4abc-8def-000000000001/spore.lynx"
-    }
-  ]
+  "updated_at": "2026-09-06T01:27:44.830460+00:00",
+  "spores": []
 }
